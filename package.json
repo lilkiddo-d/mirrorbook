@@ -1,0 +1,14 @@
+{
+  "name": "mirrorbook",
+  "private": true,
+  "version": "0.1.0",
+  "packageManager": "pnpm@12.9.1",
+  "scripts": {
+    "build:contracts": "cd contracts && forge build",
+    "test:contracts": "cd contracts && forge test",
+    "build:app": "pnpm --filter @mirrorbook/app build",
+    "dev:app": "pnpm --filter @mirrorbook/app dev",
+    "keeper:snapshot": "pnpm --filter @mirrorbook/scripts snapshot",
+    "keeper:stops": "pnpm --filter @mirrorbook/scripts stops"
+  }
+}

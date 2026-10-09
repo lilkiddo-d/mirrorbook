@@ -1,0 +1,13 @@
+packages:
+  - app
+  - scripts
+  - contracts
+minimumReleaseAgeExclude:
+  - ox@0.14.54
+  - viem@2.57.4
+onlyBuiltDependencies:
+  - esbuild
+ignoredBuiltDependencies:
+  - bufferutil
+  - keccak
+  - utf-8-validate

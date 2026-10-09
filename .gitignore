@@ -1,0 +1,22 @@
+node_modules/
+.next/
+out/
+contracts/out/
+contracts/cache/
+contracts/broadcast/*/31337/
+contracts/broadcast/**/dry-run/
+.env
+.env.local
+*.log
+coverage/
+lcov.info
+.vercel
+# rehearsal / analysis artifacts
+deployments/*.log
+deployments/*.dry-run.json
+deployments/31337.json
+app/src/config/deployments/*.dry-run.json
+contracts/slither.json
+contracts/slither.log
+app/next-env.d.ts
+.claude/
