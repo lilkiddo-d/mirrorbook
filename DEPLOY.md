@@ -25,6 +25,18 @@ Signing uses only Foundry keystore accounts: **no private key is ever placed in 
 - **Don't reuse a well-known dev key** (e.g. anvil/Hardhat account 0): those addresses have mainnet history, their
   contract-creation addresses are already taken, and anyone can drain them.
 
+## Quick path
+
+After step 1 below, a single script does the rest: chain check, balance check, mainnet dry run, typed confirmation,
+broadcast + Sourcify verification, and post-deploy role checks.
+
+```bash
+bash scripts/deploy-mainnet.sh
+```
+
+Prefix it with `RPC_URL=...`, `GUARDIAN=...`, `TREASURY=...` or `TIMELOCK_PROPOSER=...` to override defaults.
+The manual steps below do the same thing.
+
 ## 1. Import the deployer key into an encrypted keystore (once)
 
 ```bash
